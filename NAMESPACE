@@ -1,0 +1,5 @@
+exportPattern("^[[:alpha:]]+")
+import(RcppEigen)
+importFrom(numDeriv, grad)
+importFrom(numDeriv, hessian)
+useDynLib(pathintegrateR, .registration = TRUE)
